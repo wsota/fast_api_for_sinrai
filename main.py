@@ -73,3 +73,9 @@ def predict(input: InputText):
         "combined_vector": {"x": x_comp, "y": y_comp}
     }
 
+if __name__ == "__main__":
+    import os
+    import uvicorn
+
+    port = int(os.environ.get("PORT", 8000))  # Render では PORT 環境変数を使う！
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
