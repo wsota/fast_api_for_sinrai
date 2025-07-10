@@ -1,4 +1,6 @@
 fastapi
+fugashi
+protobuf
 uvicorn[standard]
 transformers
 torch
