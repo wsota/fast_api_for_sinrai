@@ -4,3 +4,4 @@ protobuf
 uvicorn[standard]
 transformers
 torch
+unidic-lite
